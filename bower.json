@@ -1,0 +1,30 @@
+{
+  "name": "shoppingCatalogue",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tonioblack/shoppingCatalogue",
+  "authors": [
+    "antonio d'oronzo <tonioblack@hotmail.it>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.x",
+    "mobile-angular-ui": "1.2.x",
+    "font-awesome": "4.2",
+    "bootstrap": "~3.3.5",
+    "angular-ui-router": "~0.2.15"
+  }
+}

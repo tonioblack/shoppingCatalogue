@@ -1,0 +1,26 @@
+{
+  "name": "shoppingCatalogue",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonioblack/shoppingCatalogue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonioblack/shoppingCatalogue/issues"
+  },
+  "homepage": "https://github.com/tonioblack/shoppingCatalogue",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower": "^0.20.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-less": "^1.0.1"
+  }
+}
