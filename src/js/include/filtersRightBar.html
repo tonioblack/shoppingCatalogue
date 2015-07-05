@@ -1,0 +1,31 @@
+<div class="scrollable">
+    <div class="scrollable-content section">
+        <form role="form" ng-submit='login()'>
+            <fieldset>
+                <legend>Filtri</legend>
+                <div class="form-group">
+                    <label>Descrizione</label>
+                    <input type="text"
+                           ng-model="c.viewState.filter.Descrizione"
+                           class="form-control"
+                           placeholder="Enter email">
+                </div>
+
+                <div class="form-group">
+                    <label>Reparto</label>
+                    <input type="text"
+                           ng-model="c.viewState.filter.Reparto"
+                           class="form-control"
+                           placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                    <label>Offerta</label>
+                    <ui-switch
+                            ng-model='c.viewState.filter.Offerta'></ui-switch>
+                </div>
+            </fieldset>
+            <hr>
+        </form>
+    </div>
+</div>

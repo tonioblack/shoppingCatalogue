@@ -1,0 +1,48 @@
+<div class="scrollable">
+    <div class="scrollable-content">
+
+
+        <div ng-repeat="item in c.items | filter:c.viewState.filter" class="list-group-item hover-item">
+            <div class="row">
+                <div class="col-xs-8 text-left">
+                    <h2>{{item.Descrizione}}</h2>
+                </div>
+                <div class="col-xs-2">
+                    qta: {{item.Qta || 0}}
+                </div>
+                <div class="col-xs-2">
+                    <button class="btn btn-block btn-primary" ng-click="item.Qta = (item.Qta ? item.Qta + 1 : 1)">
+                        <i class="fa fa-plus-circle"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    prezzo: {{item.Prezzo + " €"}}
+                </div>
+                <div class="col-xs-4">
+                    reparto: {{item.Reparto}}
+                </div>
+                <div class="col-xs-4">
+                    <i class="fa fa-star-o fa-2x" ng-show="item.Offerta === true"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div ui-content-for="right-bar">
+    <div ng-include="'js/include/filtersRightBar.html'"></div>
+</div>
+
+
+<div ui-content-for="bottom-bar">
+    <div class="btn-group pull-right" ui-yield-to="navbarAction">
+        <div ui-toggle="uiSidebarRight" class="btn sidebar-toggle">
+            <i class="fa fa-search"></i> Filtri
+        </div>
+    </div>
+</div>
+

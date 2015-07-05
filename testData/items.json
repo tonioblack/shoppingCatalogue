@@ -1,0 +1,30 @@
+[
+  {
+    "Codice" : "Art 3",
+    "Descrizione" : "latte",
+    "Prezzo" : "80.98",
+    "Reparto" : "Alimentari",
+    "Offerta" : "False"
+  },
+  {
+    "Codice" : "Art 2",
+    "Descrizione" : "pane",
+    "Prezzo" : "70.00",
+    "Reparto" : "Alimentari",
+    "Offerta" : "True"
+  },
+  {
+    "Codice" : "8001940000077",
+    "Descrizione" : "mele",
+    "Prezzo" : "75,12",
+    "Reparto" : "Frutta",
+    "Offerta" : "False"
+  },
+  {
+    "Codice" : "Art 1",
+    "Descrizione" : "mozzarella",
+    "Prezzo" : "77.11",
+    "Reparto" : "Banco",
+    "Offerta" : "False"
+  }
+]

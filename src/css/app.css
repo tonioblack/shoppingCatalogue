@@ -7926,3 +7926,6 @@ a.panel-heading {
 .dropdown-menu {
   display: block;
 }
+.hover-item:hover {
+  background-color: #eeeeee;
+}
