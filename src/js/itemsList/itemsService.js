@@ -11,6 +11,14 @@
             };
 
         return {
+            modifyQty: function (config) {
+                var settings = angular.extend({
+                    item: null,
+                    propertyName: "Qta",
+                    qty: 1,
+                }, config);
+                settings.item[settings.propertyName] = settings.item[settings.propertyName] + settings.qty;
+            },
             subscribeToItemsChange: function (config) {
                 var settings = angular.extend({
                     func: null
@@ -25,7 +33,40 @@
                         refresh: false
                     }, config);
                 $timeout(function () {
-                    if (items.length === 0 || settings.refresh === true) {
+
+                    var items = [
+                        {
+                            "Codice" : "Art 3",
+                            "Descrizione" : "latte",
+                            "Prezzo" : "80.98",
+                            "Reparto" : "Alimentari",
+                            "Offerta" : "False"
+                        },
+                        {
+                            "Codice" : "Art 2",
+                            "Descrizione" : "pane",
+                            "Prezzo" : "70.00",
+                            "Reparto" : "Alimentari",
+                            "Offerta" : "True"
+                        },
+                        {
+                            "Codice" : "8001940000077",
+                            "Descrizione" : "mele",
+                            "Prezzo" : "75,12",
+                            "Reparto" : "Frutta",
+                            "Offerta" : "False"
+                        },
+                        {
+                            "Codice" : "Art 1",
+                            "Descrizione" : "mozzarella",
+                            "Prezzo" : "77.11",
+                            "Reparto" : "Banco",
+                            "Offerta" : "False"
+                        }
+                    ];
+
+                    def.resolve(items);
+                   /* if (items.length === 0 || settings.refresh === true) {
                         httpFacade.getData()
                             .then(function (data) {
                                 if (data && data.length && data.length > 0) {
@@ -42,7 +83,7 @@
                             });
                     } else {
                         def.resolve(items);
-                    }
+                    }*/
                 });
                 return def.promise;
             }

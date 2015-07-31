@@ -11,7 +11,7 @@
                     qta: {{item.Qta || 0}}
                 </div>
                 <div class="col-xs-2">
-                    <button class="btn btn-block btn-primary" ng-click="item.Qta = (item.Qta ? item.Qta + 1 : 1)">
+                    <button class="btn btn-block btn-primary" ng-click="c.modifyQty({qty: 1, item: item})">
                         <i class="fa fa-plus-circle"></i>
                     </button>
                 </div>
